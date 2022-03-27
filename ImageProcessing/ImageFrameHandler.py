@@ -141,12 +141,6 @@ def renameFile(inputpath,outputpath):
 
 
 
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/a2_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/A2/input")
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/a3_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/A3/input")
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/a4_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/A4/input")
+mergeFrameToImage("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/a1_GT","/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/target")
 
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/b1_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/B1/input")
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/b2_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/B2/input")
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/b3_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/B3/input")
-mergeFrameToImage_method3("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/b4_Rain","/Users/shing/WorkSpace/FYP/Datasets/test_1234_2345/B4/input")
 

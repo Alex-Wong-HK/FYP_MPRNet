@@ -1,6 +1,6 @@
 import os
 from config import Config 
-opt = Config('training.yml')
+opt = Config('/content/FYP_MPRNet/Deraining/training.yml')
 
 gpus = ','.join([str(i) for i in opt.GPU])
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -117,8 +117,8 @@ for epoch in range(start_epoch, opt.OPTIM.NUM_EPOCHS + 1):
         restored = model_restoration(input_)
  
         # Compute loss at each stage
-        loss_char = np.sum([criterion_char(restored[j],target) for j in range(len(restored))])
-        loss_edge = np.sum([criterion_edge(restored[j],target) for j in range(len(restored))])
+        loss_char = sum([criterion_char(restored[j],target) for j in range(len(restored))])
+        loss_edge = sum([criterion_edge(restored[j],target) for j in range(len(restored))])
         loss = (loss_char) + (0.05*loss_edge)
         
         loss.backward()
