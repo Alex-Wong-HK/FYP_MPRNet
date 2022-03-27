@@ -13,8 +13,8 @@ import cv2
 import argparse
 
 parser = argparse.ArgumentParser(description='Demo MPRNet')
-parser.add_argument('--input_dir', default='./samples/input/', type=str, help='Input images')
-parser.add_argument('--result_dir', default='./samples/output/', type=str, help='Directory for results')
+parser.add_argument('--input_dir', default='/content/FYP_MPRNet/input/', type=str, help='Input images')
+parser.add_argument('--result_dir', default='/content/FYP_MPRNet/output/', type=str, help='Directory for results')
 
 args = parser.parse_args()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -50,7 +50,7 @@ if len(files) == 0:
 
 # Load corresponding model architecture and weights
 # load_file = run_path(os.path.join(task, "MPRNet.py"))
-load_file = run_path("/content/MPRNet/Deraining/MPRNet.py")
+load_file = run_path("/content/FYP_MPRNet/Deraining/MPRNet.py")
 model = load_file['MPRNet']()
 # model.cuda()
 model.to(device)

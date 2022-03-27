@@ -24,7 +24,7 @@ TRAINING:
   RESUME: False
   TRAIN_PS: 256
   VAL_PS: 128
-  TRAIN_DIR: '/content/MPRNet/Deraining/Datasets/train'       # path to training data
-  VAL_DIR: '/content/MPRNet/Deraining/Datasets/test/A1' # path to validation data
-  SAVE_DIR: '/content/MPRNet/Deraining/Datasets/checkpoints'           # path to save models and images
+  TRAIN_DIR: '/content/FYP_MPRNet/Deraining/Datasets/train'       # path to training data
+  VAL_DIR: '/content/FYP_MPRNet/Deraining/Datasets/test/A1' # path to validation data
+  SAVE_DIR: '/content/FYP_MPRNet/Deraining/Datasets/checkpoints'           # path to save models and images
   # SAVE_IMAGES: False
