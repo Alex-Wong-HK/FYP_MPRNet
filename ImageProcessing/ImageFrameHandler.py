@@ -10,15 +10,15 @@ parser.add_argument('--task', default='combine', type=str, help='Task')
 
 def mergeFrameToImage(inputpath,outputpath):
     files = natsorted(glob(os.path.join(inputpath, '*.jpg'))
-                + glob(os.path.join(inputpath, '*.JPG'))
-                + glob(os.path.join(inputpath, '*.png'))
-                + glob(os.path.join(inputpath, '*.PNG')))
+                      + glob(os.path.join(inputpath, '*.JPG'))
+                      + glob(os.path.join(inputpath, '*.png'))
+                      + glob(os.path.join(inputpath, '*.PNG')))
     txtfiles = []
     for file_ in files:
         f = os.path.splitext(os.path.split(file_)[-1])[0]
         txtfiles.append(f)
     imageNum = int(len(files)/4)
-    print("Frames Number "+ len(files)+"combine to " imageNum+" Images.")
+    print(f"Frames Number {len(files)} combine to {imageNum} Images.")
     imgId = 0
     for x in range(imageNum):
 
@@ -45,9 +45,9 @@ def mergeFrameToImage(inputpath,outputpath):
 
 def splitImage(inputpath,outputpath):
     files = natsorted(glob(os.path.join(inputpath, '*.jpg'))
-                + glob(os.path.join(inputpath, '*.JPG'))
-                + glob(os.path.join(inputpath, '*.png'))
-                + glob(os.path.join(inputpath, '*.PNG')))
+                      + glob(os.path.join(inputpath, '*.JPG'))
+                      + glob(os.path.join(inputpath, '*.png'))
+                      + glob(os.path.join(inputpath, '*.PNG')))
     i = 1
     for file_ in files:
         img = cv2.imread(file_)
@@ -64,6 +64,7 @@ def splitImage(inputpath,outputpath):
         i += 1
         cv2.imwrite(f'{outputpath}/{i}.png', frame4)
         i += 1
+    print(f"Extracted {len(files)} Output to {i-1} Frames.")
 
 def mergeFrameToImage_method3(inputpath,outputpath):
     files = natsorted(glob(os.path.join(inputpath, '*.jpg'))
