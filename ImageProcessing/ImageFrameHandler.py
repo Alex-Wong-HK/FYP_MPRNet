@@ -3,6 +3,10 @@ import cv2
 from natsort import natsorted
 from glob import glob
 import os
+import argparse
+
+parser = argparse.ArgumentParser(description='ImageFrameHandler')
+parser.add_argument('--task', default='combine', type=str, help='Task')
 
 def mergeFrameToImage(inputpath,outputpath):
     files = natsorted(glob(os.path.join(inputpath, '*.jpg'))
@@ -14,7 +18,7 @@ def mergeFrameToImage(inputpath,outputpath):
         f = os.path.splitext(os.path.split(file_)[-1])[0]
         txtfiles.append(f)
     imageNum = int(len(files)/4)
-    print(imageNum)
+    print("Frames Number "+ len(files)+"combine to " imageNum+" Images.")
     imgId = 0
     for x in range(imageNum):
 
@@ -139,8 +143,11 @@ def renameFile(inputpath,outputpath):
         i += 1
 
 
+args = parser.parse_args()
 
-
-mergeFrameToImage("/content/FYP_MPRNet/combineFrame","/content/FYP_MPRNet/input")
+if(args.task == 'combine'):
+    mergeFrameToImage("/content/FYP_MPRNet/combineFrame","/content/FYP_MPRNet/input")
+else:
+    splitImage("/content/FYP_MPRNet/output","/content/FYP_MPRNet/extractOutPut")
 
 
