@@ -141,6 +141,6 @@ def renameFile(inputpath,outputpath):
 
 
 
-mergeFrameToImage("/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/a1_GT","/Users/shing/Downloads/SPAC-SupplementaryMaterials-master/Dataset_Testing_Synthetic/target")
+mergeFrameToImage("/content/FYP_MPRNet/combineFrame","/content/FYP_MPRNet/input")
 
 
