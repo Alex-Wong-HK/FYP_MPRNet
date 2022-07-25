@@ -5,7 +5,7 @@
 This Project is Build for use MPRNet in Colab. For use MPRNet please follow the Step at Colab:
 https://drive.google.com/file/d/1pa7SyQaMMAbaVzuEZW6BbrnCGq_LRqKS/view?usp=sharing
 
-[![Watch the video]([https://i.imgur.com/vKb2F1B.png](https://ibb.co/gy9jYF8))](https://fyp.comp.hkbu.edu.hk/poster/2021/268/demo.mp4)
+[![Watch the video](https://i.ibb.co/Pxjmkzy/2022-07-25-12-13-50.png)](https://fyp.comp.hkbu.edu.hk/poster/2021/268/demo.mp4)
 ![Employee data](https://i.ibb.co/Jqjc1GF/2022-05-25-6-22-11.png)
 
 ## Dataset
